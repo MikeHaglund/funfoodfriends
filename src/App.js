@@ -55,18 +55,21 @@ class App extends Component {
   render() {
     return (
       <div className="app">
+        
         <header>
+          <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"></link>
           <div className="wrapper">
-            <h1>Fun Food Friends</h1>
+            <h1>Who's Bringin What</h1>
           </div>
         </header>
         <div className="container">
+        
           <section className="add-item">
             <form onSubmit={this.handleSubmit}>
               <input
                 type="text"
                 name="username"
-                placeholder="What's your name?"
+                placeholder="Who are you?"
                 onChange={this.handleChange}
                 value={this.state.username}
               />
